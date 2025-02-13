@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2-Fußabdruck Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <style>
+        
+        .intro-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+        .intro-image {
+            flex: 1;
+            max-width: 45%;
+            text-align: center;
+        }
+        .intro-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .intro-text {
+            flex: 1;
+            max-width: 50%;
+            padding: 20px;
+            text-align: left;
+        }
+        .intro-text h2 {
+            font-size: 2.5em;
+            color: #2d3e50;
+        }
+        .intro-text p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #444;
+        }
+        .intro-text a.button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #536458;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-size: 1.1em;
+        }
+        .intro-text a.button:hover {
+            background-color: #405045;
+        }
+
+        
+        @media screen and (max-width: 1024px) {
+            .intro-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .intro-image, .intro-text {
+                max-width: 90%;
+            }
+            .intro-text {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="CO2 Tracker Logo">
+                <h1>CO2-Fußabdruck Tracker</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="daten.html">Daten</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="intro-section">
+            <div class="intro-container">
+                <div class="intro-image">
+                    <img src="assets/17_co2_footprint.jpg" alt="CO2 Fußabdruck Bild">
+                </div>
+                <div class="intro-text">
+                    <h2>Willkommen beim CO2-Fußabdruck Tracker</h2>
+                    <p>Unsere Mission ist es, die jährlichen CO2-Emissionen von Ländern und Unternehmen transparent darzustellen. Wir helfen Ihnen, umweltbewusstere Entscheidungen zu treffen.</p>
+                    <p>Erforschen Sie interaktive Daten, vergleichen Sie Unternehmen und Länder anhand ihrer CO2-Emissionen.</p>
+                    <a href="daten.html" class="button">Zu den Daten</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <section id="kontakt" class="contact-section">
+            <h2>Kontakt</h2>
+            <p><strong>E-Mail:</strong> info@co2tracker.de</p>
+            <p><strong>Telefon:</strong> +49 123 456 789</p>
+        </section>
+        <p>&copy; 2025 CO2-Fußabdruck Tracker. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
